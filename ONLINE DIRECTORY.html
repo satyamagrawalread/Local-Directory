@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Directory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: aliceblue;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            
+        }
+        header{
+            background-color: aqua;
+            border-radius: 20px;
+            width: 100%;
+            height: fit-content;
+            font-family: 'Big Shoulders Inline Text', cursive;
+            font-size: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr auto auto;
+            align-items: center;
+        }
+
+        #search input{
+
+            border-radius: 20px;
+            border: 3px solid gray;
+            font-size: 20px;
+            height: 25px;
+            
+        }
+        #search{
+            border-radius: 3px;
+            display: inline;
+            padding-left: 10px
+            ;
+        }
+
+        #logo{
+            text-align: center;
+            padding: auto;
+        }
+
+        #about, #contact{
+            padding-right: 10px;
+            margin: auto;
+        }
+        .btn{
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+
+
+        .container{
+            font-family: 'Big Shoulders Inline Text', cursive;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            display: grid;
+            padding: 6%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-row-gap: 3%;
+            grid-column-gap: 8%;
+
+        }
+        
+        .container img{
+            height: 200px;
+        }
+        @media (max-width: 800px) {
+            .container{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            #search input{
+                font-size: 17px;
+                height: 21px;
+            }
+        }
+        @media (max-width: 500px) {
+            .container{
+                grid-template-columns: 1fr 1fr;
+            }
+            #search input{
+                font-size: 14px;
+                height: 17px;
+            }
+        }
+        @media (max-width: 200px) {
+            .container{
+                grid-template-columns: 1fr;
+            }
+            #search input{
+                font-size: 13px;
+                height: 17px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div id="logo">
+            <p>Online Directory</p>
+        </div>
+        <div id="about">
+            <button class="btn">About Us</button>
+        </div>
+        <div id="contact">
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item-1">
+            <img src="https://image.shutterstock.com/image-vector/hotel-icon-reservation-porter-recreation-600w-537418630.jpg" alt="" width=100%>
+            <p>Hotels</p>
+        </div>
+        <div class="item-2">
+            <img src="https://image.shutterstock.com/image-vector/grocery-shop-facade-flat-illustration-260nw-1377770909.jpg" alt="" width=100%>
+            <p>Groceries</p>
+        </div>
+        <div class="item-3">
+            <img src="https://image.shutterstock.com/image-vector/man-withdraws-money-atm-vector-260nw-581988586.jpg" alt="" width=100%>
+            <p>ATM & Banks</p>
+        </div>
+        <div class="item-4">
+            <img src="https://image.shutterstock.com/image-vector/pupils-teacher-classroom-school-pedagogue-260nw-1159273615.jpg" alt="" width=100%>
+            <p>Schools</p>
+        </div>
+        <div class="item-5">
+            <img src="https://image.shutterstock.com/image-vector/electrician-engineer-man-working-breaker-260nw-1342265456.jpg" alt="" width=100%>
+            <p>Electrical Services</p>
+        </div>
+        <div class="item-6">
+            <img src="https://image.shutterstock.com/image-vector/facade-pets-zoo-store-signboard-260nw-488547163.jpg" alt="" width=100% >
+            <p>Pet Shops</p>
+        </div>
+        <div class="item-7">
+            <img src="https://image.shutterstock.com/image-vector/sketch-little-people-cinema-symbols-260nw-687290029.jpg" alt="" width=100%>
+            <p>Cinema & Theatres</p>
+        </div>
+        <div class="item-8">
+            <img src="https://image.shutterstock.com/image-vector/coffee-shop-building-facade-flat-260nw-580776058.jpg" alt="" width=100%>
+            <p>Coffee Shops</p>
+        </div>
+        <div class="item-9">
+            <img src="https://image.shutterstock.com/image-vector/people-buy-tool-store-vector-260nw-1756542443.jpg" alt="" width=100%>
+            <p>Hardware Stores</p>
+        </div>
+        <div class="item-10">
+            <img src="https://image.shutterstock.com/image-vector/illustration-kids-touring-greenhouse-260nw-195675533.jpg" alt="" width=100%>
+            <p>Nursery Plants</p>
+        </div>
+        <div class="item-11">
+            <img src="https://image.shutterstock.com/image-vector/street-ice-cream-cart-awning-260nw-1775857139.jpg" alt="" width=100%>
+            <p>Ice-cream Parlors</p>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
